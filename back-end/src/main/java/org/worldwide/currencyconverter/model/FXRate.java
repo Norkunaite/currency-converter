@@ -20,20 +20,17 @@ public class FXRate {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
-	@Temporal(TemporalType.DATE)
-	private Date updated;
 	private String currency;
 	private double currentCurrencyRate;
 	
-	public FXRate(Date updated, String currency, double currentCurrencyRate) {
-		this.updated = updated;
+	public FXRate(String currency, double currentCurrencyRate) {
 		this.currency = currency;
 		this.currentCurrencyRate = currentCurrencyRate;
 	}
 
 	@Override
 	public String toString() {
-		return "FXRate [updated=" + updated + ", currency=" + currency + ", currentCurrencyRate=" + currentCurrencyRate
+		return "FXRate [currency=" + currency + ", currentCurrencyRate=" + currentCurrencyRate
 				+ "]";
 	}
 
