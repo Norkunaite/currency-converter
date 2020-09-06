@@ -1,0 +1,28 @@
+.flex-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.drop-down-css{
+  min-height: 35px;
+  background-color: #e6e6e6;
+  color: #4d4d4d;
+  border:solid 1px #bfbfbf;
+  border-radius:5px;
+}
+
+select {
+  text-indent: 10px;
+}
+
+.item-center{
+  display: flex;
+  justify-content: center;
+}
+
+.empty-response{
+  min-width:300px;
+}
+
+
+
