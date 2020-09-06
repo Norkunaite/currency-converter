@@ -47,7 +47,7 @@ public class FXRateServiceImpl implements FXRateService {
 				}
 				String[] strArr=rate.getTextContent().split("\n");
 				
-				repo.save(new FXRate(strArr[1], Double.parseDouble(strArr[2])));
+				repo.save(new FXRate(strArr[1].trim(), Double.parseDouble(strArr[2])));
 				
 			
 			}
